@@ -1,24 +1,39 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>About Me</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../../index.css"></head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../index.css" />
+  </head>
   <body>
     <div id="loading">
       <div id="spinner"></div>
     </div>
     <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
     <div id="background_overlay"></div>
-    <div id="background" style="background: url(top_image.jpeg) center;"></div>
+    <div id="background" style="background: url(top_image.jpeg) center"></div>
     <table id="profile_blog">
       <tbody>
         <tr>
-          <td style="width:8vw;"><div id="profile_img_blog"></div></td>
-          <td style="width:52vw;">
+          <td style="width: 8vw"><div id="profile_img_blog"></div></td>
+          <td style="width: 52vw">
             <div id="username_blog"></div>
           </td>
         </tr>
@@ -27,22 +42,34 @@
     <div id="blog-display">
       <h1 id="blog_title">About Me</h1>
       <h2 id="blog_sub_title">OSSP Week12 Assignment</h2>
-      <div id="blog"><p id="para_0_original">Introduction: Includes self-introduction, career summary, educational background, etc.</p><p id="para_1_original">Skills: Lists the skills, languages, tools, frameworks, etc., that you possess.</p><img src="img_0.jpeg" alt="blog image 0" id="img_0_original"></div>
+      <div id="blog">
+        <p id="para_0_original">
+          Introduction: Includes self-introduction, career summary, educational
+          background, etc.
+        </p>
+        <p id="para_1_original">
+          Skills: Lists the skills, languages, tools, frameworks, etc., that you
+          possess.
+        </p>
+        <img src="img_0.jpeg" alt="blog image 0" id="img_0_original" />
+      </div>
     </div>
     <div id="footer_blog">
-      <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+      <a href="https://github.com/imfunniee" target="_blank"
+        >made on earth by a human</a
+      >
     </div>
     <script type="text/javascript">
-      setTimeout(function() {
+      setTimeout(function () {
         document.getElementById("loading").classList.add("animated");
         document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
+        setTimeout(function () {
           document.getElementById("loading").classList.remove("animated");
           document.getElementById("loading").classList.remove("fadeOut");
           document.getElementById("loading").style.display = "none";
         }, 800);
       }, 1500);
-      $.getJSON("../../config.json", function(user) {
+      $.getJSON("../../config.json", function (user) {
         var icon = document.createElement("link");
         icon.setAttribute("rel", "icon");
         icon.setAttribute("href", user[0].userimg);
@@ -66,6 +93,5 @@
         }
       });
     </script>
-  
-
-</body></html>
+  </body>
+</html>
