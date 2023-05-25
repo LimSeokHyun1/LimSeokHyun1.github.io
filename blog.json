@@ -1,16 +1,9 @@
 [
- {
-  "url_title": "About-Me",
-  "title": "About Me",
-  "sub_title": "OSSP Week12 Assignment",
-  "top_image": "top_image.jpeg",
-  "visible": true
- },
- {
-  "url_title": "Second-Trial",
-  "title": "Second Trial",
-  "sub_title": "Please...",
-  "top_image": "top_image.jpeg",
-  "visible": true
- }
+  {
+    "url_title": "About-Me",
+    "title": "About Me",
+    "sub_title": "OSSP Week12 Assignment",
+    "top_image": "top_image.jpeg",
+    "visible": true
+  }
 ]
